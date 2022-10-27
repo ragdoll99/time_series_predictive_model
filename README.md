@@ -216,6 +216,7 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="ETS Forecast", type='l'
 
   
 Double Seasonal Holt-Winters:
+
 ETS function is only allow for one seasonality. 
 Sometimes, there could be multiple seasonality (e.g Monthly
 and yearly). For double seasonal holt-winters method, it allow for two
