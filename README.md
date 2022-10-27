@@ -89,13 +89,13 @@ Basic Plot
 autoplot(sales, main = "Perishable food items sales: 2017 - 2020")
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->  
+![](figure-gfm/unnamed-chunk-5-1.png)<!-- -->  
 
 ``` r
 ggseasonplot(sales, main = "Seasonal Plot")
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->  
+![](figure-gfm/unnamed-chunk-6-1.png)<!-- -->  
 Decomposition of times series.
 
 ``` r
@@ -103,7 +103,7 @@ decomposed_sales_additive <- decompose(sales, type = "additive")
 autoplot(decomposed_sales_additive)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->  
+![](figure-gfm/unnamed-chunk-7-1.png)<!-- -->  
 In the decomposition chart there is 4 compononents:  
 1. Original data  
 2. Trend: calculated by moving average of data.  
@@ -117,7 +117,7 @@ decomposed_sales_multiplicative <- decompose(sales, type = "multiplicative")
 autoplot(decomposed_sales_multiplicative)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
   
 Next, we split data to training and test set for building model and
@@ -150,9 +150,9 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="Seasonal Naive Forecast
   lines(naive$mean, col="red", lwd=2)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
-    ## integer(0)
+
 
 #### Exponential Smoothing
 
@@ -212,9 +212,7 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="ETS Forecast", type='l'
   lines(ets_forecast$mean, col="red", lwd=2)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
-
-    ## integer(0)
+![](figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
   
 Double Seasonal Holt-Winters ETS function is only allow for one
@@ -237,9 +235,8 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="DSHW Forecast", type='l
   lines(dshw_model$mean, col="red", lwd=2)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
-    ## integer(0)
 
 #### BATS and TBATS
 
@@ -262,9 +259,8 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="TBATS Forecast", type='
   lines(tbats_forecast$mean, col="red", lwd=2)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
-    ## integer(0)
 
 #### ARIMA Model
 
@@ -334,9 +330,8 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="SARIMA Forecast", type=
   lines(sarima_forecast$pred, col="red", lwd=2)
 ```
 
-![](Time_series_predictive_model_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![](figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
-    ## integer(0)
 
 ### Model selection
 
@@ -362,3 +357,4 @@ In this study, Double Seasonal Holt-Winters with two season (quarterly
 -every 3 months and Yearly-every 12 months) give the lowest MAPE.
 
 Review the forecast again:
+![](figure-gfm/unnamed-chunk-16-1.png)<!-- -->
