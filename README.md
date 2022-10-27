@@ -356,5 +356,6 @@ c.df
 In this study, Double Seasonal Holt-Winters with two season (quarterly
 -every 3 months and Yearly-every 12 months) give the lowest MAPE.
 
-Review the forecast again:
+Review the forecast again:\
+\
 ![](figure-gfm/unnamed-chunk-16-1.png)<!-- -->
