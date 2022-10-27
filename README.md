@@ -215,8 +215,9 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="ETS Forecast", type='l'
 ![](figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
   
-Double Seasonal Holt-Winters ETS function is only allow for one
-seasonality. Sometimes, there could be multiple seasonality (e.g Monthly
+Double Seasonal Holt-Winters:
+ETS function is only allow for one seasonality. 
+Sometimes, there could be multiple seasonality (e.g Monthly
 and yearly). For double seasonal holt-winters method, it allow for two
 seasonality, a smaller one repeated often and bigger one repeated less
 often. we will use quarterly (every 3 months) and Yearly (every 12
