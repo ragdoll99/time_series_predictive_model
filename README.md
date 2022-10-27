@@ -264,8 +264,10 @@ plot(sales, col="blue", xlab="Year", ylab="Sales", main="TBATS Forecast", type='
 
 #### ARIMA Model
 
-ARIMA models contain: 1. AR(p) : autoregressive part of the model. 2.
-Differencing(d) : lags 3. MA(q): forecast errors
+ARIMA models contain: 
+1. AR(p) : autoregressive part of the model. 
+2. Differencing(d) : lags 
+3. MA(q): forecast errors
 
 We use auto.arima function to return the best estimated model.
 
