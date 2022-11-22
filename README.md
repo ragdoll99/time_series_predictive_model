@@ -5,7 +5,7 @@ Ragdoll99
 
 ## Time Series Predictive Model for demand of perishable food item.
 
-This is a project to showcase time series predictive modelling.
+This is a project for time series predictive modelling. It was part of the project-based interview.  
 
 Background: A local supermarket often face the issue of over or under
 production of one of its perishable house brand food item. There are
